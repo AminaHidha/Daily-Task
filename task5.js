@@ -12,8 +12,8 @@ console.log(rest);
 // destructure to get c & d
 
 let[,{c,d}, ,]=mark;
-console.log(c);
-console.log(d);
+console.log({c});
+console.log({d});
 
 
 

@@ -1,9 +1,13 @@
 var addDigits = function(num) {
-   let str=num.toString()
-   while(num>10){
-   str.split('')
-   }
-   return
+     while (num >= 10) {
+        let sum = 0;
+        while (num > 0) {
+            sum += num % 10; 
+            num = Math.floor(num / 10); 
+        }
+        num = sum;
+    }
+    return num;
 };
 console.log(addDigits(38));
 console.log(addDigits(0));
